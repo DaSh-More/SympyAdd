@@ -7,11 +7,11 @@ class I(sympy.Matrix):
     """
     Класс единичной матрицы
     """
-    
     def __new__(cls, i):
         return super().__new__(cls, numpy.eye(i, dtype='int8'))
 
     def P(self, i: int, j: int) -> sympy.Matrix:
+    
         """
         Создает элементарную матрицу перемещающую строки
 
@@ -106,7 +106,7 @@ class I(sympy.Matrix):
         return L
 
     @staticmethod
-    def decompose(mat: numpy.ndarray | sympy.Matrix | list) -> list[numpy.array]:
+    def decompose(mat: sympy.Matrix) -> list[numpy.array]:
         """
         Принимает квадратную матрицу, возвращает разложение
         на элементарные матрицы

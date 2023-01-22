@@ -1,6 +1,6 @@
 from setuptools import setup
 
-setup(name='one_sec_mail',
+setup(name='sympy_add',
 
       version='1.0',
 
